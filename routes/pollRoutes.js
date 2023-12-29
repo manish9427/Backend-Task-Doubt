@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Poll = require('../models/poll.js');
+const Poll = require('../models/poll');
 
 // GET all polls
 router.get('/all', async (req, res) => {
