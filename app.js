@@ -8,10 +8,10 @@ const cors = require('cors');
 const pollRoutes = require('./routes/pollRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT =  3000;
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect("mongodb+srv://manish9427:manish9427@project.hwbxf7p.mongodb.net/?retryWrites=true&w=majority");
 mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
 mongoose.connection.once('open', () => {
   console.log('Connected to MongoDB');
