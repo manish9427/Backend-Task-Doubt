@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const pollRoutes = require('./routes/pollRoutes');
+const pollRoutes = require('./routes/pollRoutes.js');
 
 const app = express();
 const PORT =  3000;
